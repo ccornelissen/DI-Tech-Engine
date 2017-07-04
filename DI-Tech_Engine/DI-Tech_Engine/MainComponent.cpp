@@ -1,38 +1,29 @@
 #include "MainComponent.h"
-#include "DI_Window.h"
+
 
 #undef main
 
 using namespace std;
 
+MainComponent::MainComponent()
+{
+}
+
+MainComponent::~MainComponent()
+{
+}
+
 int main()
 {
 	DI_Window di_Window(800, 600, "DI Game Engine");
 
-	MainComponent::Start();
+	Game game;
+
+	CoreEngine engine(60, &di_Window, &game);
+	engine.Start();
+
+	cin.get();
+
+	return 0;
 }
 
-void MainComponent::Start()
-{
-	Run();
-}
-
-void MainComponent::Stop()
-{
-}
-
-void MainComponent::Run()
-{
-	while (!DI_Window::isCloseRequested())
-	{
-		Render();
-	}
-}
-
-void MainComponent::Render()
-{
-}
-
-void MainComponent::CleanUp()
-{
-}

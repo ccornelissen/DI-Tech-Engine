@@ -118,17 +118,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CoreEngine.cpp" />
     <ClCompile Include="DI_Base.cpp" />
     <ClCompile Include="DI_Window.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="MainComponent.cpp" />
+    <ClCompile Include="Timing.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="DI-Tech_Engine.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CoreEngine.h" />
     <ClInclude Include="DI_Base.h" />
     <ClInclude Include="DI_Window.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="MainComponent.h" />
+    <ClInclude Include="Timing.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

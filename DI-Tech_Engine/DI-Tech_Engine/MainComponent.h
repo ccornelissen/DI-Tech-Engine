@@ -1,14 +1,16 @@
 #pragma once
 #include "DI_Base.h"
+#include "CoreEngine.h"
+#include "DI_Window.h"
+#include "Game.h"
 
 using namespace std;
 
 class MainComponent
 {
 public:
-	static void Start();
-	static void Stop();
-	static void Run();
-	static void Render();
-	static void CleanUp();
+	MainComponent();
+	~MainComponent();
+
+
 };
