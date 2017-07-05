@@ -2,8 +2,10 @@
 #include "DI_Base.h"
 #include "SDL2\SDL.h"
 #include "GL\glew.h"
+#include "DI_Input.h"
 
 using namespace std;
+
 
 class DI_Window
 {
@@ -16,6 +18,8 @@ public:
 	int getHeight();
 	int getWidth();
 	string getTitle();
+	SDL_Window* GetSDL_Window();
+
 
 private:
 	int iWidth;
@@ -23,7 +27,7 @@ private:
 	string sTitle;
 	SDL_Window* window;
 	SDL_GLContext glContext;
-	//Input input;
+	DI_Input di_Input;
 	bool bCloseRequested;
 };
 

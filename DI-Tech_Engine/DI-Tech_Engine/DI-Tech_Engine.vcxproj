@@ -120,6 +120,7 @@
   <ItemGroup>
     <ClCompile Include="CoreEngine.cpp" />
     <ClCompile Include="DI_Base.cpp" />
+    <ClCompile Include="DI_Input.cpp" />
     <ClCompile Include="DI_Window.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="MainComponent.cpp" />
@@ -131,6 +132,7 @@
   <ItemGroup>
     <ClInclude Include="CoreEngine.h" />
     <ClInclude Include="DI_Base.h" />
+    <ClInclude Include="DI_Input.h" />
     <ClInclude Include="DI_Window.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="MainComponent.h" />

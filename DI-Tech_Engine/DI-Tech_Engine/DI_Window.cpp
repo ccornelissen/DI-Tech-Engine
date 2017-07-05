@@ -1,9 +1,11 @@
 #include "DI_Window.h"
+#include "DI_Input.h"
 
 DI_Window::DI_Window(int width, int height, const string& title) :
 	iWidth(width),
 	iHeight(height),
 	sTitle(title),
+	di_Input(this),
 	bCloseRequested(false)
 {
 	//Initialize SDL sub systems
@@ -59,5 +61,10 @@ int DI_Window::getWidth()
 string DI_Window::getTitle()
 {
 	return string();
+}
+
+SDL_Window * DI_Window::GetSDL_Window()
+{
+	return window;
 }
 
