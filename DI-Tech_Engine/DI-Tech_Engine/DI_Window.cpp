@@ -45,7 +45,12 @@ void DI_Window::Update()
 
 bool DI_Window::isCloseRequested()
 {
-	return false;
+	return bCloseRequested;
+}
+
+void DI_Window::CloseRequested(bool bValue)
+{
+	bCloseRequested = bValue;
 }
 
 int DI_Window::getHeight()

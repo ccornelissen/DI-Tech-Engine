@@ -12,7 +12,8 @@ public:
 
 	static SDL_Keycode GetKey(SDL_Event* event);
 	static void SetCursor(bool value);
-	void SetMousePosition(float x, float y);
+	static void SetMousePosition(DI_Window* window, int x, int y);
+	
 
 private:
 	DI_Window* inp_Window;

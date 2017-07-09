@@ -63,7 +63,7 @@ void CoreEngine::Run()
 
 			dUnprocessedTime -= dFrameTime;
 
-			if (DI_Window::isCloseRequested()) //If user attempts to close the window stop running the program
+			if (di_Window->isCloseRequested()) //If user attempts to close the window stop running the program
 			{
 				Stop();
 			}

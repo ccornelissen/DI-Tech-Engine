@@ -25,6 +25,7 @@ SDL_Keycode DI_Input::GetKey(SDL_Event* event)
 	}
 }
 
+
 void DI_Input::SetCursor(bool value)
 {
 	if (value)
@@ -37,9 +38,9 @@ void DI_Input::SetCursor(bool value)
 	}
 }
 
-void DI_Input::SetMousePosition(float x, float y)
+void DI_Input::SetMousePosition(DI_Window* window, int x, int y)
 {
-	SDL_WarpMouseInWindow(inp_Window->GetSDL_Window(), (int)x, (int)y);
+	SDL_WarpMouseInWindow(window->GetSDL_Window(), (int)x, (int)y);
 }
 
 

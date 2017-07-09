@@ -14,7 +14,8 @@ public:
 	~DI_Window();
 
 	void Update();
-	static bool isCloseRequested();
+	bool isCloseRequested();
+	void CloseRequested(bool bValue);
 	int getHeight();
 	int getWidth();
 	string getTitle();
